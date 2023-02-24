@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request
-from flask import url_for, redirect, flash
+from flask import Flask, render_template, request, url_for
+
 
 import tmdb_client
 
