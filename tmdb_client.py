@@ -4,7 +4,7 @@ import json
 API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMDNiZjg2YWFmNDZlMTkwZWJjNGYwMjI2ZTlkZmIyNCIsInN1YiI6IjYzZjNkMDI1ZTk0MmVlMDBkYjJhNjQwZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KGM5Sc88atqmYAUOaVFEWz3ZK2vSqGwOnxT7qR1Q3tM"
 
 def get_popular_movies(list_type):
-    endpoint = "https://api.themoviedb.org/3/movie/popular"
+    endpoint = f'https://api.themoviedb.org/3/movie/{list_type}'
     headers = {
         "Authorization": f"Bearer {API_TOKEN}"
     }
